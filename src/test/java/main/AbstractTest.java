@@ -13,6 +13,12 @@ public class AbstractTest extends AbstractTestNGSpringContextTests{
 
     public static WebDriver webDriver;
 
+    public WebDriver getWebDriver;
+
+    public static WebDriver getWebDriver() {
+        return webDriver;
+    }
+
     //annotation before any test
     @BeforeClass(alwaysRun = true)
     protected void setUp(){
@@ -21,7 +27,7 @@ public class AbstractTest extends AbstractTestNGSpringContextTests{
 
     @AfterClass(alwaysRun = true)
     protected void tearDown(){
-        webDriver.quit();
+        /*webDriver.quit();*/
     }
 
 }

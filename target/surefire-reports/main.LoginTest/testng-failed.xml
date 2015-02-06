@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [main.LoginTest]">
+  <test name="Command line test 26207c4f-7758-45c2-a14b-67c05b0c2004(failed)">
+    <classes>
+      <class name="main.LoginTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="loginYahoo"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- main.LoginTest -->
+    </classes>
+  </test> <!-- Command line test 26207c4f-7758-45c2-a14b-67c05b0c2004(failed) -->
+</suite> <!-- Failed suite [main.LoginTest] -->

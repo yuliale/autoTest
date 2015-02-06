@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="main.LoginTest" duration-ms="19232" started-at="2014-12-12T14:15:36Z" finished-at="2014-12-12T14:15:55Z">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.loginYahoo()[pri:0, instance:main.LoginTest@14bf9759]" name="loginYahoo" class="main.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.loginYahoo()[pri:0, instance:main.LoginTest@14bf9759]" name="loginYahoo" class="main.LoginTest"/>
+      </group> <!-- smoke -->
+      <group name="positive">
+        <method signature="LoginTest.loginYahoo()[pri:0, instance:main.LoginTest@14bf9759]" name="loginYahoo" class="main.LoginTest"/>
+      </group> <!-- positive -->
+    </groups>
+    <test name="Command line test 26207c4f-7758-45c2-a14b-67c05b0c2004" duration-ms="19232" started-at="2014-12-12T14:15:36Z" finished-at="2014-12-12T14:15:55Z">
+      <class name="main.LoginTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:main.LoginTest@14bf9759]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:main.LoginTest@14bf9759]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="6" started-at="2014-12-12T16:15:36Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.LoginTest@14bf9759]" name="setUp" is-config="true" duration-ms="2114" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginYahoo()[pri:0, instance:main.LoginTest@14bf9759]" name="loginYahoo" duration-ms="17078" started-at="2014-12-12T16:15:38Z" finished-at="2014-12-12T16:15:55Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.xpath: //input[@id='username']
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: //input[@id='username']
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at main.LoginTest.loginYahoo(LoginTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=39.0.2171.71)
+  (Driver info: chromedriver=2.12.301325 (962dea43ddd90e7e4224a03fa3c36a421281abb7),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\yuliale\AppData\Local\Temp\scoped_dir3140_32634}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1380d65b5f57eafcd12be09212d6ea98
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:103)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginYahoo -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:main.LoginTest@14bf9759]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:38Z" finished-at="2014-12-12T16:15:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.LoginTest.loginYahoo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.LoginTest@14bf9759]" name="tearDown" is-config="true" duration-ms="2" started-at="2014-12-12T16:15:55Z" finished-at="2014-12-12T16:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:main.LoginTest@14bf9759]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:55Z" finished-at="2014-12-12T16:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.LoginTest.loginYahoo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:main.LoginTest@14bf9759]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:55Z" finished-at="2014-12-12T16:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- main.LoginTest -->
+    </test> <!-- Command line test 26207c4f-7758-45c2-a14b-67c05b0c2004 -->
+  </suite> <!-- main.LoginTest -->
+  <suite name="main.SearchTest" duration-ms="9142" started-at="2014-12-12T14:15:55Z" finished-at="2014-12-12T14:16:04Z">
+    <groups>
+      <group name="regression">
+        <method signature="SearchTest.searchGoogle()[pri:0, instance:main.SearchTest@73ad2d6]" name="searchGoogle" class="main.SearchTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="SearchTest.searchGoogle()[pri:0, instance:main.SearchTest@73ad2d6]" name="searchGoogle" class="main.SearchTest"/>
+      </group> <!-- smoke -->
+      <group name="positive">
+        <method signature="SearchTest.searchGoogle()[pri:0, instance:main.SearchTest@73ad2d6]" name="searchGoogle" class="main.SearchTest"/>
+      </group> <!-- positive -->
+    </groups>
+    <test name="Command line test 7ad8afa6-3c5a-483b-beb5-f42bcd039711" duration-ms="9142" started-at="2014-12-12T14:15:55Z" finished-at="2014-12-12T14:16:04Z">
+      <class name="main.SearchTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:main.SearchTest@73ad2d6]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:55Z" finished-at="2014-12-12T16:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:main.SearchTest@73ad2d6]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="14" started-at="2014-12-12T16:15:55Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-12-12T16:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.SearchTest@73ad2d6]" name="setUp" is-config="true" duration-ms="6118" started-at="2014-12-12T16:15:55Z" finished-at="2014-12-12T16:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:main.SearchTest@73ad2d6]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-12-12T16:16:01Z" finished-at="2014-12-12T16:16:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.SearchTest.searchGoogle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="searchGoogle()[pri:0, instance:main.SearchTest@73ad2d6]" name="searchGoogle" duration-ms="3007" started-at="2014-12-12T16:16:01Z" finished-at="2014-12-12T16:16:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at main.SearchTest.searchGoogle(SearchTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGoogle -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:main.SearchTest@73ad2d6]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:04Z" finished-at="2014-12-12T16:16:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.SearchTest.searchGoogle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:main.SearchTest@73ad2d6]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:04Z" finished-at="2014-12-12T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.SearchTest@73ad2d6]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:04Z" finished-at="2014-12-12T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.SearchTest -->
+    </test> <!-- Command line test 7ad8afa6-3c5a-483b-beb5-f42bcd039711 -->
+  </suite> <!-- main.SearchTest -->
+  <suite name="main.YahooTest" duration-ms="20578" started-at="2014-12-12T14:16:04Z" finished-at="2014-12-12T14:16:25Z">
+    <groups>
+      <group name="regression">
+        <method signature="YahooTest.searchYahoo()[pri:0, instance:main.YahooTest@1e397ed7]" name="searchYahoo" class="main.YahooTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="YahooTest.searchYahoo()[pri:0, instance:main.YahooTest@1e397ed7]" name="searchYahoo" class="main.YahooTest"/>
+      </group> <!-- smoke -->
+      <group name="positive">
+        <method signature="YahooTest.searchYahoo()[pri:0, instance:main.YahooTest@1e397ed7]" name="searchYahoo" class="main.YahooTest"/>
+      </group> <!-- positive -->
+    </groups>
+    <test name="Command line test 666d846f-f226-4fa9-b455-1ceb7972b6e5" duration-ms="20578" started-at="2014-12-12T14:16:04Z" finished-at="2014-12-12T14:16:25Z">
+      <class name="main.YahooTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:main.YahooTest@1e397ed7]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2014-12-12T16:16:04Z" finished-at="2014-12-12T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:main.YahooTest@1e397ed7]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="7" started-at="2014-12-12T16:16:04Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-12-12T16:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.YahooTest@1e397ed7]" name="setUp" is-config="true" duration-ms="1593" started-at="2014-12-12T16:16:04Z" finished-at="2014-12-12T16:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:main.YahooTest@1e397ed7]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-12-12T16:16:06Z" finished-at="2014-12-12T16:16:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.YahooTest.searchYahoo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="searchYahoo()[pri:0, instance:main.YahooTest@1e397ed7]" name="searchYahoo" duration-ms="18966" started-at="2014-12-12T16:16:06Z" finished-at="2014-12-12T16:16:25Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 10 seconds waiting for presence of element located by: By.xpath: //*[@id='link-1']
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: //*[@id='link-1']
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at main.YahooTest.searchYahoo(YahooTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:155)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=39.0.2171.71)
+  (Driver info: chromedriver=2.12.301325 (962dea43ddd90e7e4224a03fa3c36a421281abb7),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'PTUA-LS0219', ip: '172.29.62.30', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\yuliale\AppData\Local\Temp\scoped_dir11848_16116}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=39.0.2171.71, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d4742d602aba8464ca593d021d9547d9
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:103)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchYahoo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.YahooTest@1e397ed7]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:25Z" finished-at="2014-12-12T16:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:main.YahooTest@1e397ed7]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:25Z" finished-at="2014-12-12T16:16:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.YahooTest.searchYahoo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:main.YahooTest@1e397ed7]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2014-12-12T16:16:25Z" finished-at="2014-12-12T16:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- main.YahooTest -->
+    </test> <!-- Command line test 666d846f-f226-4fa9-b455-1ceb7972b6e5 -->
+  </suite> <!-- main.YahooTest -->
+  <suite name="main.AbstractTest" duration-ms="7" started-at="2014-12-12T14:15:26Z" finished-at="2014-12-12T14:15:26Z">
+    <groups>
+    </groups>
+    <test name="Command line test c0477c23-a89b-4266-b67a-f69cb5e2f5ab" duration-ms="7" started-at="2014-12-12T14:15:26Z" finished-at="2014-12-12T14:15:26Z">
+    </test> <!-- Command line test c0477c23-a89b-4266-b67a-f69cb5e2f5ab -->
+  </suite> <!-- main.AbstractTest -->
+  <suite name="main.IceLoginTest" duration-ms="9624" started-at="2014-12-12T14:15:26Z" finished-at="2014-12-12T14:15:36Z">
+    <groups>
+      <group name="smoke, positive, regression">
+        <method signature="IceLoginTest.loginFromHeader()[pri:0, instance:main.IceLoginTest@1794d431]" name="loginFromHeader" class="main.IceLoginTest"/>
+        <method signature="IceLoginTest.loginFromPopup()[pri:0, instance:main.IceLoginTest@1794d431]" name="loginFromPopup" class="main.IceLoginTest"/>
+      </group> <!-- smoke, positive, regression -->
+    </groups>
+    <test name="Command line test ac33a8b2-b656-4dc2-b8fd-98b8d4e99c6d" duration-ms="9624" started-at="2014-12-12T14:15:26Z" finished-at="2014-12-12T14:15:36Z">
+      <class name="main.IceLoginTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="16" started-at="2014-12-12T16:15:26Z" finished-at="2014-12-12T16:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="572" started-at="2014-12-12T16:15:26Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2014-12-12T16:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.IceLoginTest@1794d431]" name="setUp" is-config="true" duration-ms="3260" started-at="2014-12-12T16:15:26Z" finished-at="2014-12-12T16:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2014-12-12T16:15:30Z" finished-at="2014-12-12T16:15:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.IceLoginTest.loginFromHeader()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="loginFromHeader()[pri:0, instance:main.IceLoginTest@1794d431]" name="loginFromHeader" duration-ms="5760" started-at="2014-12-12T16:15:30Z" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFromHeader -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.IceLoginTest.loginFromHeader()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.IceLoginTest.loginFromPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="loginFromPopup()[pri:0, instance:main.IceLoginTest@1794d431]" name="loginFromPopup" duration-ms="0" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFromPopup -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:main.IceLoginTest@1794d431]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void main.IceLoginTest.loginFromPopup()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.IceLoginTest@1794d431]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-12-12T16:15:36Z" finished-at="2014-12-12T16:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.IceLoginTest -->
+    </test> <!-- Command line test ac33a8b2-b656-4dc2-b8fd-98b8d4e99c6d -->
+  </suite> <!-- main.IceLoginTest -->
+</testng-results>

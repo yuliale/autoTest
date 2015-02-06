@@ -1,1 +1,5 @@
-test\java\LoginTest.class
+main\YahooTest.class
+main\IceLoginTest.class
+main\AbstractTest.class
+main\LoginTest.class
+main\SearchTest.class

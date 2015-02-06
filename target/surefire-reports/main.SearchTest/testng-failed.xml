@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [main.SearchTest]">
+  <test name="Command line test 7ad8afa6-3c5a-483b-beb5-f42bcd039711(failed)">
+    <classes>
+      <class name="main.SearchTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="searchGoogle"/>
+        </methods>
+      </class> <!-- main.SearchTest -->
+    </classes>
+  </test> <!-- Command line test 7ad8afa6-3c5a-483b-beb5-f42bcd039711(failed) -->
+</suite> <!-- Failed suite [main.SearchTest] -->
